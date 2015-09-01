@@ -12,8 +12,9 @@
  * @since         0.10.0
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
-$cakeDescription = 'CakePHP: the rapid development php framework';
+?>
+<?php
+use Cake\Core\Configure;
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,35 +22,37 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $cakeDescription ?>:
-        <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('cake.css') ?>
+    <?= $this->Html->css('kiwi.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
-<body>
+<body class="home">
     <header>
         <div class="header-title">
-            <span><?= $this->fetch('title') ?></span>
-        </div>
-        <div class="header-help">
-            <span><a target="_blank" href="http://book.cakephp.org/3.0/">Documentation</a></span>
-            <span><a target="_blank" href="http://api.cakephp.org/3.0/">API</a></span>
+            <h1>Kiwi App</h1>
+            <?php
+            echo $this->Html->link('Promotores', '/promoters/index', ['class' => 'a', 'target' => '_self']);
+            echo $this->Html->link('Reportes', '/reports/index', ['class' => 'a', 'target' => '_self']);
+            echo $this->Html->link('Tiendas', '/stores/index', ['class' => 'a', 'target' => '_self']);
+            echo $this->Html->link('Usuarios', '/users/index', ['class' => 'a', 'target' => '_self']);
+            echo $this->Html->link('Ciudades', '/cities/index', ['class' => 'a', 'target' => '_self']);
+            echo $this->Html->link('Salir', '/pages/logout', ['class' => 'a', 'target' => '_self']);  
+            ?>
         </div>
     </header>
     <div id="container">
-
         <div id="content">
             <?= $this->Flash->render() ?>
-
             <div class="row">
-                <?= $this->fetch('content') ?>
+                <div class="columns large-12">
+                    <?= $this->fetch('content') ?>
+                </div>
             </div>
         </div>
         <footer>
