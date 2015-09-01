@@ -326,3 +326,52 @@ Stack Trace:
 
 2015-09-01 19:09:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2015-09-01 19:11:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 19:22:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 19:24:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 19:52:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:04:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:41:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:41:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Sotres could not be found.
+Exception Attributes: array (
+  'class' => 'Sotres',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /kiwi/sotres
+Stack Trace:
+#0 /var/www/html/kiwi/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-01 22:41:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:43:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:44:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:49:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:49:32 Error: Fatal Error (1): Call to a member function find() on boolean in [/var/www/html/kiwi/src/Controller/StoresController.php, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-09-01 22:49:32 Error: [Cake\Error\FatalErrorException] Call to a member function find() on boolean
+Request URL: /kiwi/stores/add
+Stack Trace:
+#0 /var/www/html/kiwi/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/k...', 36)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-09-01 22:51:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:52:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:52:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:52:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:52:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:53:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:53:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:54:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:55:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:57:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-01 22:58:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.

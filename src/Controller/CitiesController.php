@@ -52,7 +52,7 @@
 		    $this->request->allowMethod(['post', 'delete']);
 		    $city = $this->Cities->get($id);
 		    if ($this->Cities->delete($city)){
-		        $this->Flash->success(__('La ciudad con id: {0} ha sido eliminada.', h($id)));
+		        $this->Flash->success(__('La ciudad ha sido eliminada.'));
 		        return $this->redirect(['action' => 'index']);
 		    }
 		}
