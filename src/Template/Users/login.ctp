@@ -1,25 +1,42 @@
 <?php
+
+use Cake\Cache\Cache;
+use Cake\Core\Configure;
+use Cake\Datasource\ConnectionManager;
+use Cake\Error\Debugger;
+use Cake\Network\Exception\NotFoundException;
+
+//$this->layout = false;
+
+if (!Configure::read('debug')):
+    throw new NotFoundException();
+endif;
+
 $pageDescription = 'KIWI App';
+
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $pageDescription ?>
     </title>
 </head>
 <body class="home">
-    <header>
-        <div class="header-image">
-            <?= $this->Html->image('http://cakephp.org/img/cake-logo.png') ?>
-            <h1>KIWI App</h1>
-        </div>
-    </header>
     <div id="content">
         <div class="row">
-              <?php echo $info; ?>
+            <div class="columns large-12">
+                <?php
+                // Usuario
+                echo $this->Form->input('username');
+                // Contraseña
+                echo $this->Form->input('password');
+
+                echo $this->Form->button('Ingresar');
+                echo $this->Form->end();
+                ?>
+            </div>
         </div>
     </div>
     <footer>

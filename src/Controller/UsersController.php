@@ -12,6 +12,8 @@ class UsersController extends AppController{
 		$info = 'hola mundo';
 		$this->set('info', $info);
 		//Render de view in /View/Users/login.ctp
+		// Set the layout.
+    	$this->viewBuilder()->layout('basic');
 		$this->render();
 	}
 
