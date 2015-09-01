@@ -62,7 +62,7 @@ return [
      *   You should treat it as extremely sensitive data.
      */
     'Security' => [
-        'salt' => 'bf4c992f6a6ab9d7bf4fca24b28700a8c07c0cb7983b389520a18b1bcfe322ee',
+        'salt' => 'hkjsklopet6ab9d7bf4fca24b28700a8c07c0cb7983b389520a18b1bcfe322ee',
     ],
 
     /**
@@ -209,16 +209,16 @@ return [
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
-            'host' => 'localhost',
+            'host' => 'db4free.net',
             /**
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
              * the following line and set the port accordingly
              */
             //'port' => 'nonstandard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'my_app',
+            'username' => 'kiwi_admin',
+            'password' => 'kiwi_pass',
+            'database' => 'kiwi_project',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
