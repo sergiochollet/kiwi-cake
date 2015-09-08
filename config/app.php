@@ -209,15 +209,18 @@ return [
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
-            'host' => 'db4free.net',
+            //'host' => 'db4free.net',
+            'host' => 'localhost',
             /**
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
              * the following line and set the port accordingly
              */
             //'port' => 'nonstandard_port_number',
-            'username' => 'kiwi_admin',
-            'password' => 'kiwi_pass',
+            //'username' => 'kiwi_admin',
+            'username' => 'root',
+            //'password' => 'kiwi_pass',
+            'password' => 'HIMacct4DB',
             'database' => 'kiwi_project',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
